@@ -16,7 +16,9 @@ app.use(cors({
     'http://localhost:3000',
     'http://admin.lidiazucaro.it',
     'https://admin.lidiazucaro.it',
-    'https://salone-lidia-dashboards.netlify.app'
+    'https://lidiazucaro.it',           // ← AGGIUNTO
+    'http://lidiazucaro.it',            // ← AGGIUNTO  
+    'https://salone-lidia-dashboards.onrender.com'
   ],
   credentials: true
 }));
