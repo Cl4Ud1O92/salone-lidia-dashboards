@@ -13,7 +13,7 @@ const JWT_SECRET = process.env.JWT_SECRET || 'salone-lidia-supersecret-2026-chan
 app.use(cors({
   origin: [
     'http://localhost:5173',
-    'http://localhost:3000',
+    'https://charming-hotteok-3b7e1c.netlify.app',
     'http://lidiazucaro.it',
     'https://lidiazucaro.it',
     'http://www.lidiazucaro.it',      // ✅ AGGIUNTO www HTTP
