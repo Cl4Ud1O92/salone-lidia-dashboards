@@ -14,13 +14,17 @@ app.use(cors({
   origin: [
     'http://localhost:5173',
     'http://localhost:3000',
+    'http://lidiazucaro.it',
+    'https://lidiazucaro.it',
+    'http://www.lidiazucaro.it',      // ✅ AGGIUNTO www HTTP
+    'https://www.lidiazucaro.it',     // ✅ AGGIUNTO www HTTPS
     'http://admin.lidiazucaro.it',
     'https://admin.lidiazucaro.it',
-    'https://lidiazucaro.it',           // ← AGGIUNTO
-    'http://lidiazucaro.it',            // ← AGGIUNTO  
     'https://salone-lidia-dashboards.onrender.com'
   ],
-  credentials: true
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],  // ✅ OPTIONS preflight
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
 app.use(express.json({ limit: '10mb' }));
 
